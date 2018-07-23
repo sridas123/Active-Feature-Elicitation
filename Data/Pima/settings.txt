@@ -1,0 +1,20 @@
+setting for Pima
+obs_feat_num=5
+threshold=1
+subset_size=5
+
+"""These are the parameters to be set by the user"""
+no_of_iter_per_run=14
+
+no_of_runs=5
+
+"""The dataset size needs to be mentioned"""
+obs_size=10
+
+"""This is not currently required"""
+#unobs_size=800
+test_split=5
+#test_size=0.3*obs_size
+obs_all_depth=6
+obs_unobs_depth=3
+pos_to_neg=0
