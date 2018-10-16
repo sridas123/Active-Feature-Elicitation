@@ -4,7 +4,7 @@ threshold=1
 subset_size=5
 
 """These are the parameters to be set by the user"""
-no_of_iter_per_run=14
+no_of_iter_per_run=15
 
 no_of_runs=5
 

@@ -1,5 +1,6 @@
 # Active-Feature-Elicitation
 
+<<<<<<< HEAD
 This repository contains the code for the paper "On Whom Should I Perform the Lab Test on Next? An Active Feature Elicitation Approach" which has been published in International Joint Conference on AI (IJCAI) 2018.  The link for the paper is http://www.ijcai.org/proceedings/2018/0486.pdf. Folds for Pima dataset has been uploaded as a test data set for this code. 
 
 Run instructions:
@@ -34,3 +35,6 @@ Important instructions:
 6. Graphs folder will contain the graphs.
 7. The 5-folds for the experiments have already been created and stored in the Fold* folders.
 8. The above mentioned parameter setting is the one that is reported in the paper. The parameters are also mentioned in settings.txt file.
+=======
+This repositary contains the code for the paper "On Whom Should I Perform the Lab Test on Next? An Active Feature Elicitation Approach" which has been published in IJCAI 2018.  The link for the paper is http://www.ijcai.org/proceedings/2018/0486.pdf. Folds for Pima dataset has been uploaded in the folder so that users can get an idea of the folder structure required for this code to run. For any queries related to the code, drop an email to sridas@indiana.edu.
+>>>>>>> 587ea5ea200d1fc86a7cadde98404e827b9da9a2
