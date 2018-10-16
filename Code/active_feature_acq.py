@@ -17,7 +17,7 @@ from numpy import linalg as LA
 import matplotlib.pyplot as plt
 import csv
 import numpy as np
-import Log_Reg as lmodel
+import Classifier as lmodel
 import math
 import itertools
 import split_data as split
@@ -25,35 +25,15 @@ import sys
 
 """Efforts were taken to make the code more efficient"""
 """Model on the Observed features of all data built just once"""
-"""Model on all features of acquired data also built just once every iteration instead of twice"""
-
-"""Office Machine path"""
-"""Path for Cardia dataset"""
-#path="C:\\Users\\sxd170431\\Dropbox\\Active_feature_acquisition\\Data\\Cardia\\y20\\"
-#gpath="C:\\Users\\sxd170431\\Dropbox\\Active_feature_acquisition\\Data\\Cardia\\y20\\Graphs\\"
-
-"""Windows Machine path"""
-#path="C:\\Users\\Srijita\\Dropbox\\Active_feature_acquisition\\Data\\Cardia\\y20\\"
-#gpath="C:\\Users\\Srijita\\Dropbox\\Active_feature_acquisition\\Data\\Cardia\\y20\\Graphs\\"
-
-"""Windows Office Path"""
-#path="C:\\Users\\Srijita\\Dropbox\\Active_feature_acquisition\\Data\\"
-path="D:\\Grad Studies\\SRL\\Active_Feature_acquisition_IJCAI_journal_exp\\Data\\"
+#path="D:\\Grad Studies\\SRL\\Active_Feature_acquisition_IJCAI_journal_exp\\Data\\"
+path=sys.argv[1]
 print "The path is", path
-"""Office Path"""
-#path="C:\\Users\\sxd170431\\Dropbox\\Active_feature_acquisition\\Data\\"
-
-path=path+sys.argv[1]+"\\"
-#gpath=path+"\\Graphs\\"
+path=path+"\\"+sys.argv[2]+"\\"
 
 """ This name changes according to the dataset name"""
-#data_name="train_facts_year20_clean"
-#data_name="Pima_clean"
-#data_name="Sussy_clean"
-#data_name="Perk_clean"
-data_name=sys.argv[2]
-classifier=sys.argv[3]
-metric=sys.argv[4]
+data_name=sys.argv[3]
+classifier=sys.argv[4]
+metric=sys.argv[5]
 
 """File names that are not fold dependent"""
 clean_data         =  path+data_name+".csv"
@@ -63,25 +43,25 @@ obs_unobs_all      =  path+data_name+"_obs_unobs_all.csv"
 
 """Number of features that are observed in both the dataset"""
 """This is one more than the no. of observed features due to the pid introduced"""
-obs_feat_num=5
-threshold=1
-subset_size=5
+obs_feat_num=(int)(sys.argv[6])
+#threshold=1
+subset_size=(int)(sys.argv[7])
 
 """These are the parameters to be set by the user"""
-no_of_iter_per_run=15
+no_of_iter_per_run=(int)(sys.argv[8])
 
-no_of_runs=5
+no_of_runs=(int)(sys.argv[9])
 
 """The dataset size needs to be mentioned"""
-obs_size=10
+obs_size=(int)(sys.argv[10])
 
 """This is not currently required"""
 #unobs_size=800
-test_split=5
+test_split=(int)(sys.argv[11])
 #test_size=0.3*obs_size
-obs_all_depth=6
-obs_unobs_depth=3
-pos_to_neg=0
+obs_all_depth=(int)(sys.argv[12])
+obs_unobs_depth=(int)(sys.argv[13])
+pos_to_neg=(int)(sys.argv[14])
 
 def loadcsv(filename):
     dataset = np.genfromtxt(filename, delimiter=',')
