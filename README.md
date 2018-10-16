@@ -1,6 +1,5 @@
 # Active-Feature-Elicitation
 
-<<<<<<< HEAD
 This repository contains the code for the paper "On Whom Should I Perform the Lab Test on Next? An Active Feature Elicitation Approach" which has been published in International Joint Conference on AI (IJCAI) 2018.  The link for the paper is http://www.ijcai.org/proceedings/2018/0486.pdf. Folds for Pima dataset has been uploaded as a test data set for this code. For any queries related to the code, drop an email to sxd170431@utdallas.edu.
 
 Run instructions:
