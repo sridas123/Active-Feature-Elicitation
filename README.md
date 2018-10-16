@@ -15,7 +15,7 @@ Details of the command line arguments are as below:
 4. Classifier used:- GB: Gradient Boosting, LR: Logistic Regression, SVM: Support Vector Machine, DT: Decision tree. You can add your own classifier in Classifier.py
 5. Divergence metric used:- KL: KL-divergence, HD: Hellinger distance, TV: Total Variation, CD: Chi squared distance 
 6. Number of observed features (1+actual number of features, the first column in Pima_clean data set contains identifiers which are also included for convenience). The unique identifiers in the 1st column are however not considered while learning the models.
-7. Size of data points to be acquired in every iteration of Active learning
+7. Number of data points to be acquired in every iteration of Active learning
 8. No. of iterations of data point acquisition in each run
 9. No. of runs 
 10. Observed set sample size to start with 
@@ -26,9 +26,9 @@ Details of the command line arguments are as below:
 
 Important instructions:
 
-1. Folder structure should be the same as there in the Data Folder.
+1. Folder structure should be the same as that in the Data Folder.
 2. The IJCAI paper has all the experiments using Gradient Boosting Classifier and KL-divergence as the distance metric. Hence, these are currently there in the folder structure.
-3. Every Classifier and distance metric has separate folders where results gets stored. In order to try a new classifier, you have to create a new folder with the desired name.
+3. Every Classifier and distance metric has separate folders where results get stored. In order to try a new classifier, you have to create a new folder with the desired name.
 4. The code runs the algorithm and also runs the Random baseline as mentioned in the paper. 
 5. In the All_runs folder, Pima_clean_stat.csv will give the performance metric of all the runs. In the same folder, *_sugg.csv will contain individual values of all iterations across all runs. *_rnd.csv will contain details about the random baseline.
 6. Graphs folder will contain the graphs.
