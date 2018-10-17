@@ -5,6 +5,7 @@ This repository contains the code for the paper "On Whom Should I Perform the La
 Run instructions:
 
 Run the code active_feature_acq.py in the below mentioned way.
+
 active_feature_acq.py "D:\git_projects\Active-Feature-Elicitation\Data" Pima Pima_clean GB KL 5 5 14 5 10 5 6 3 0
  
 Details of the command line arguments are as below:
